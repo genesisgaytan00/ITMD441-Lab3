@@ -2,41 +2,44 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv='X-UA-Compatible' content='IE-edge'>
     <title>ITMD 441 Lab 3</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <h2>ITMD 441 - Lab3 - Genesis Gaytan</h2>
-    <h1>Tio Calculator</h1>
-    <h2>Bill Total: </h2>
-    <input type="text" id="myTextBox">
-
-    <h2>Tip;</h2>
-
-    <h2>Tip Percentage</h2>
-
-    <2>Tip Amount</2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="grey-rectangle">
+        <div class="grey-rect-text">
+            <div class="centered-text">
+                <p>ITMD 441 - Lab3 - Genesis Gaytan</p>
+                <h1>Tip Calculator</h1>
+            </div>
+            <div class="bill-total">
+                <div class="textboxes">
+                    <label>Bill Total:</label>
+                    <input type="text" id="myTextBox">
+                </div>
+                <div class="textboxes">
+                    <label>Tip:</label>
+                    <input type="range" id="tipSlider" min="0" max="100" step="1">
+                    <span id="tipValue"></span>
+                </div>
+                
+                <div class="textboxes">
+                    <label>Tip Percentage:</label>
+                    <input type="text" id="tipPercentTextBox" disabled>
+                </div>
+                <div class="textboxes">
+                    <label>Tip Amount:</label>
+                    <input type="text" id="tipAmountTextBox" disabled>
+                </div>
+                <div class="textboxes">
+                    <label>Total Bill with Tip:</label>
+                    <input type="text" id="totalTextBox" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
